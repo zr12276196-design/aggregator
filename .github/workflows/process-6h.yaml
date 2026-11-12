@@ -14,6 +14,10 @@ env:
 
   # token with gist scope, as a Secret
   PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
+  # GitHub crawler token (reuses the existing PUSH_TOKEN secret; the
+  # aggregator's GithubCrawl needs GH_TOKEN or GH_COOKIE, otherwise it
+  # finds 0 sites and the run produces no subscriptions)
+  GH_TOKEN: ${{ secrets.PUSH_TOKEN }}
 
   # do NOT skip the alive check: only verified nodes are published
   SKIP_ALIVE_CHECK: ${{ vars.SKIP_ALIVE_CHECK }}
