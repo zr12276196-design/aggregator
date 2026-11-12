@@ -1,0 +1,55 @@
+name: Process
+
+on:
+  schedule:
+    # every 6 hours (UTC): 01:05, 07:05, 13:05, 19:05 UTC = 09:05, 15:05, 21:05, 03:05 CST
+    - cron: "05 */6 * * *"
+  workflow_dispatch:
+
+env:
+  TZ: Asia/Shanghai
+
+  # network proxy aggregate config (whole my-config.json content, as a Secret)
+  SUBSCRIBE_CONF: ${{ secrets.SUBSCRIBE_CONF }}
+
+  # token with gist scope, as a Secret
+  PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
+
+  # do NOT skip the alive check: only verified nodes are published
+  SKIP_ALIVE_CHECK: ${{ vars.SKIP_ALIVE_CHECK }}
+
+  SKIP_REMARK: ${{ vars.SKIP_REMARK }}
+  WORKFLOW_MODE: ${{ vars.WORKFLOW_MODE }}
+  ENABLE_SPECIAL_PROTOCOLS: ${{ vars.ENABLE_SPECIAL_PROTOCOLS }}
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          # the project has a git submodule (manager); fetch it so local imports work
+          submodules: recursive
+
+      - name: Prepare
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+          architecture: "x64"
+          cache: "pip"
+
+      - name: Install
+        run: pip3 install -r requirements.txt
+
+      - name: Process
+        # NOTE: no --overwrite on purpose. Without it, process.py re-fetches the
+        # previous run's subscription from Gist ("remains-free" task) and merges
+        # it, so a run that finds few/no new nodes does NOT wipe the last good
+        # output. A failed run also never pushes: push_to only PATCHes the Gist
+        # after a target converts successfully, so the previous result stays.
+        run: python -u subscribe/process.py -s my-config.json -n 32 -t 15000
+
+      - name: Timestamp
+        run: date
