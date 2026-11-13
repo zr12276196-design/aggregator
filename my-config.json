@@ -1,1 +1,701 @@
-{"crawl":{"enable":true,"exclude":"","github":{"enable":true,"exclude":"","exclude_repos":[],"pages":2,"push_to":["free"]},"google":{"days":7,"enable":false,"exclude":"","exclude_sites":[],"limit":100,"push_to":[]},"include_nodes":true,"max_fails":5,"pages":[{"enable":true,"url":"https://leidahub.top/v2ray.txt","include":"","exclude":"","paged":false,"placeholder":"","start":1,"end":1,"task":{"rename":""},"push_to":["free"]},{"enable":true,"url":"https://raw.githubusercontent.com/v2raydog-node/free-nodes/main/shadowrocket.txt","include":"","exclude":"","paged":false,"placeholder":"","start":1,"end":1,"task":{"rename":""},"push_to":["free"]},{"enable":true,"url":"https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt","include":"","exclude":"","paged":false,"placeholder":"","start":1,"end":1,"task":{"rename":""},"push_to":["free"]}],"persist":{"nodes":"crawledproxies","subscribe":"crawledsubs"},"repositories":[{"enable":true,"username":"v2raydog-node","repo":"free-nodes","commits":3,"exclude":"","push_to":["free"]},{"enable":true,"username":"zhuhaiuk","repo":"free-nodes","commits":3,"exclude":"","push_to":["free"]}],"scripts":[],"task":{"exclude":"","include":"日本|东京|大阪|Japan|JP|香港|Hong Kong|HK|台湾|Taiwan|TW|新加坡|Singapore|SG|韩国|首尔|Korea|KR","rename":""},"telegram":{"channels":{},"enable":true,"exclude":"","pages":5},"twitter":{"enable":false,"users":{}},"yandex":{"days":3,"enable":false,"exclude":"","exclude_sites":[],"pages":5,"push_to":[]}},"groups":{"free":{"emoji":true,"list_only":false,"regularize":{"digits":2,"enable":false,"locate":true,"residential":true},"targets":{"clash":"free-clash","singbox":"free-singbox","v2ray":"free-v2ray"}}},"sites":[],"storage":{"engine":"gist","items":{"crawledproxies":{"filename":"crawledproxies.json","gist_id":"899625d9b7ba12bf6530be248ea72e81","username":"zr12276196-design"},"crawledsubs":{"filename":"crawledsubs.json","gist_id":"899625d9b7ba12bf6530be248ea72e81","username":"zr12276196-design"},"free-clash":{"filename":"free-clash.yaml","gist_id":"899625d9b7ba12bf6530be248ea72e81","username":"zr12276196-design"},"free-singbox":{"filename":"free-singbox.json","gist_id":"899625d9b7ba12bf6530be248ea72e81","username":"zr12276196-design"},"free-v2ray":{"filename":"free-v2ray.txt","gist_id":"899625d9b7ba12bf6530be248ea72e81","username":"zr12276196-design"}}}}
+{
+ "crawl": {
+  "enable": true,
+  "exclude": "",
+  "github": {
+   "enable": true,
+   "exclude": "",
+   "exclude_repos": [],
+   "pages": 2,
+   "push_to": [
+    "free"
+   ]
+  },
+  "google": {
+   "days": 7,
+   "enable": false,
+   "exclude": "",
+   "exclude_sites": [],
+   "limit": 100,
+   "push_to": []
+  },
+  "include_nodes": true,
+  "max_fails": 5,
+  "pages": [
+   {
+    "enable": true,
+    "url": "https://leidahub.top/v2ray.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/v2raydog-node/free-nodes/main/shadowrocket.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/1.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/2.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/4.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/5.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/6.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/7.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/8.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/9.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/10.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/11.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/12.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/13.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/14.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/15.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/16.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/17.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/18.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/19.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/20.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/21.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/22.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/23.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/24.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/25.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/26.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/28.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/32.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/33.1.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/27.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/29.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/30.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "url": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/34.txt",
+    "include": "",
+    "exclude": "",
+    "paged": false,
+    "placeholder": "",
+    "start": 1,
+    "end": 1,
+    "task": {
+     "rename": ""
+    },
+    "push_to": [
+     "free"
+    ]
+   }
+  ],
+  "persist": {
+   "nodes": "crawledproxies",
+   "subscribe": "crawledsubs"
+  },
+  "repositories": [
+   {
+    "enable": true,
+    "username": "v2raydog-node",
+    "repo": "free-nodes",
+    "commits": 3,
+    "exclude": "",
+    "push_to": [
+     "free"
+    ]
+   },
+   {
+    "enable": true,
+    "username": "zhuhaiuk",
+    "repo": "free-nodes",
+    "commits": 3,
+    "exclude": "",
+    "push_to": [
+     "free"
+    ]
+   }
+  ],
+  "scripts": [],
+  "task": {
+   "exclude": "",
+   "include": "日本|东京|大阪|Japan|JP|香港|Hong Kong|HK|台湾|Taiwan|TW|新加坡|Singapore|SG|韩国|首尔|Korea|KR",
+   "rename": ""
+  },
+  "telegram": {
+   "channels": {},
+   "enable": true,
+   "exclude": "",
+   "pages": 5
+  },
+  "twitter": {
+   "enable": false,
+   "users": {}
+  },
+  "yandex": {
+   "days": 3,
+   "enable": false,
+   "exclude": "",
+   "exclude_sites": [],
+   "pages": 5,
+   "push_to": []
+  }
+ },
+ "groups": {
+  "free": {
+   "emoji": true,
+   "list_only": false,
+   "regularize": {
+    "digits": 2,
+    "enable": false,
+    "locate": true,
+    "residential": true
+   },
+   "targets": {
+    "clash": "free-clash",
+    "singbox": "free-singbox",
+    "v2ray": "free-v2ray"
+   }
+  }
+ },
+ "sites": [],
+ "storage": {
+  "engine": "gist",
+  "items": {
+   "crawledproxies": {
+    "filename": "crawledproxies.json",
+    "gist_id": "899625d9b7ba12bf6530be248ea72e81",
+    "username": "zr12276196-design"
+   },
+   "crawledsubs": {
+    "filename": "crawledsubs.json",
+    "gist_id": "899625d9b7ba12bf6530be248ea72e81",
+    "username": "zr12276196-design"
+   },
+   "free-clash": {
+    "filename": "free-clash.yaml",
+    "gist_id": "899625d9b7ba12bf6530be248ea72e81",
+    "username": "zr12276196-design"
+   },
+   "free-singbox": {
+    "filename": "free-singbox.json",
+    "gist_id": "899625d9b7ba12bf6530be248ea72e81",
+    "username": "zr12276196-design"
+   },
+   "free-v2ray": {
+    "filename": "free-v2ray.txt",
+    "gist_id": "899625d9b7ba12bf6530be248ea72e81",
+    "username": "zr12276196-design"
+   }
+  }
+ }
+}
