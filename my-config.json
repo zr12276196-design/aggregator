@@ -597,22 +597,6 @@
     "push_to": [
      "free"
     ]
-   },
-   {
-    "enable": true,
-    "url": "https://sunmiao4458.github.io/free-proxy-airport/clash.yaml",
-    "include": "",
-    "exclude": "",
-    "paged": false,
-    "placeholder": "",
-    "start": 1,
-    "end": 1,
-    "task": {
-     "rename": ""
-    },
-    "push_to": [
-     "free"
-    ]
    }
   ],
   "persist": {
@@ -683,7 +667,47 @@
    }
   }
  },
- "sites": [],
+ "sites": [
+  {
+   "name": "free-proxy-airport",
+   "subscribe": [
+    "https://sunmiao4458.github.io/free-proxy-airport/clash.yaml"
+   ],
+   "domain": "",
+   "enable": true,
+   "rename": "",
+   "include": "日本|东京|大阪|Japan|JP|香港|Hong Kong|HK|台湾|Taiwan|TW|新加坡|Singapore|SG|韩国|首尔|Korea|KR|泰国|THA|美国|USA|德国|DE|意大利|ITA|俄罗斯|RUS",
+   "exclude": "",
+   "push_to": [
+    "free"
+   ],
+   "ignore_default_exclude": true,
+   "check_alive": true,
+   "max_rate": 2.5,
+   "count": 2,
+   "coupon": "",
+   "require_tls": false,
+   "renew": {
+    "accounts": [
+     {
+      "email": "",
+      "password": "",
+      "ticket": {
+       "enable": true,
+       "auto_reset": false,
+       "subject": "",
+       "message": "",
+       "level": 1
+      }
+     }
+    ],
+    "plan_id": 3,
+    "package": "",
+    "method": 1,
+    "coupon_code": ""
+   }
+  }
+ ],
  "storage": {
   "engine": "gist",
   "items": {
