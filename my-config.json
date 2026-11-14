@@ -628,7 +628,7 @@
   "scripts": [],
   "task": {
    "exclude": "",
-   "include": "日本|东京|大阪|Japan|JP|香港|Hong Kong|HK|台湾|Taiwan|TW|新加坡|Singapore|SG|韩国|首尔|Korea|KR|美国|United States|USA|US-",
+   "include": "日本|东京|大阪|Japan|JP|香港|Hong Kong|HK|台湾|Taiwan|TW|新加坡|Singapore|SG|韩国|首尔|Korea|KR",
    "rename": ""
   },
   "telegram": {
@@ -697,6 +697,5 @@
     "username": "zr12276196-design"
    }
   }
- },
- "delay": 2000
+ }
 }
