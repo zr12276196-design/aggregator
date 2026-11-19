@@ -731,7 +731,7 @@
      "domain": "",
      "enable": true,
      "rename": "",
-     "include": "日本|东京|大阪|Japan|JP|香港|Hong Kong|HK|台湾|Taiwan|TW|新加坡|Singapore|SG|韩国|首尔|Korea|KR|泰国|THA|美国|USA|德国|DE|意大利|ITA|俄罗斯|RUS",
+     "include": "日本|东京|大阪|Japan|JP|香港|Hong Kong|HK|台湾|Taiwan|TW|新加坡|Singapore|SG|韩国|首尔|Korea|KR|泰国|THA|美国|USA|德国|DE|意大利|ITA|俄罗斯|RUS|Kansas|堪萨斯",
      "exclude": "",
      "push_to": [
       "free"
